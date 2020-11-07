@@ -1,0 +1,40 @@
+$bg-color: green;
+$link-color: blue;
+$size: 1em;
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 250px;
+  &-toolbar{
+    background-color: $bg-color !important;
+  }
+}
+
+a {
+  color: $link-color;
+  font-size: 15px;
+  &:visited {
+    color: red;
+  }
+  &:hover {
+    color: purple;
+    font-weight: bold;
+  }
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar.mat-primary .title {
+  color: white;
+}
